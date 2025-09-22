@@ -1,0 +1,97 @@
+/* About Page Styles */
+.about-hero {
+    background: linear-gradient(135deg, #bca18c 0%, #e7d7c9 100%);
+    padding: 120px 20px 60px; /* extra top for fixed header */
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #5b0611;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: #4e342e;
+}
+
+.about-content {
+    padding: 3rem 20px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5b0611;
+}
+
+.about-content p, .about-content ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #4e342e;
+}
+
+.about-content ul li {
+    margin-left: 1.2rem;
+    list-style-type: disc;
+}
+
+/* Team Section */
+.about-team {
+    padding: 3rem 20px;
+    background: #e7d7c9;
+}
+
+.team-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member .avatar {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    color: #5b0611;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #4e342e;
+}
+
+/* Optional hover effect */
+/*
+.team-member:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 4px 12px rgba(188, 161, 140, 0.3);
+}
+    */
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .team-member {
+        max-width: 150px;
+    }
+}

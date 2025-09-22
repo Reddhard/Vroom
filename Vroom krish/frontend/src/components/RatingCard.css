@@ -1,0 +1,172 @@
+.ride-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s, border-color 0.2s;
+  position: relative;
+}
+
+.ride-card:hover {
+  border-color: #8b0a1a;
+  transform: scale(1.02);
+}
+
+.ride-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #5b0611;
+}
+
+.ride-card p {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.request-btn {
+  background: #8b0a1a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+  /*
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  */
+}
+
+.request-btn:hover {
+  background: #5b0611;
+}
+
+.request-btn.cancel {
+  background: #aaa;
+}
+
+.request-btn.cancel:hover {
+  background: #888;
+}
+
+.ride-card .payment-details,
+.ride-card .rating-comment,
+.ride-card .note {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #f7f7f7;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Base style */
+.status {
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* Status-specific colors */
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.status.ongoing {
+  background-color: #cce5ff;
+  color: #004085;
+  border: 1px solid #b8daff;
+}
+
+.status.completed {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status.cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.departure,
+.destination {
+  text-align: center;
+}
+
+.route .label {
+  display: block;
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.route .location {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.route-line {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5b0611;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, #5b0611, #ddd);
+  margin: 0 0.5rem;
+}
+
+.ride-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail .label {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.detail .value {
+  font-weight: 500;
+  color: #333;
+}
+
+.detail .price {
+  color: #5b0611;
+  font-weight: 600;
+  font-size: 1.1rem;
+}

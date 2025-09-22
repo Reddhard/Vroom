@@ -1,0 +1,36 @@
+.auth-section { padding: 120px 0 3rem; }
+.auth-container { max-width: 500px; margin: 0 auto; }
+.auth-card { background: #fff; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.auth-header h2 { margin-bottom: 0.5rem; }
+.auth-header p { margin-bottom: 1.5rem; color: #555; }
+.form-group { margin-bottom: 1rem; }
+.form-group input, .form-group select { width: 100%; padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc; }
+.radio-group { display: flex; gap: 1rem; }
+.radio-option { display: flex; align-items: center; gap: 0.3rem; }
+.btn-primary { width: 100%; padding: 0.7rem; background: #5b0611; color: white; border: none; border-radius: 6px; cursor: pointer; margin-top: 1rem; }
+.btn-primary:hover { background: #7a0a19; }
+.tab-buttons { display: flex; margin-bottom: 1.5rem; border-bottom: 2px solid #eee; }
+.tab-buttons button { flex: 1; padding: 0.7rem; cursor: pointer; border: none; background: none; font-weight: 600; border-bottom: 2px solid transparent; transition: all 0.3s; }
+.tab-buttons button.active { border-bottom-color: #5b0611; color: #5b0611; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+.both-fields { display: block !important; }
+.phone-input-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.phone-input-wrapper select {
+  flex: 0 0 80px; /* fixed width for dropdown */
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.phone-input-wrapper input {
+  flex: 1; /* takes remaining space */
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,187 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Test Player",
+      "phone": "+8801010101010",
+      "email": "test@test.com",
+      "password": "1234",
+      "role": "passenger",
+      "nid": "123456789012"
+    },
+    {
+      "id": "2",
+      "fullName": "Test Driver",
+      "phone": "+8801231231230",
+      "email": "driver@test.com",
+      "password": "abcd",
+      "role": "both"
+    },
+    {
+      "id": "3e3f",
+      "fullName": "A A",
+      "phone": "+8801234567890",
+      "email": "z@gmail.com",
+      "nid": "73248979832",
+      "password": "a",
+      "role": "passenger"
+    },
+    {
+      "id": "e145",
+      "fullName": "Pela",
+      "phone": "+8801212121212",
+      "email": "pl@mail.com",
+      "nid": "123412341234",
+      "password": "asd",
+      "role": "passenger"
+    },
+    {
+      "fullName": "Vepu",
+      "password": "qw",
+      "phone": "+8801234512000",
+      "email": "vp@mail.com",
+      "nid": "211221122121",
+      "id": "a4b6",
+      "role": "both"
+    }
+  ],
+  "rides": [
+    {
+      "id": "8812",
+      "from": "Dhaka",
+      "to": "Chittagong",
+      "date": "2025-09-20",
+      "time": "18:35",
+      "vehicleId": "v4",
+      "farekm": "4.5",
+      "notes": "",
+      "userId": "a4b6",
+      "passengerId": "3e3f",
+      "status": "completed",
+      "paidAmount": "1000",
+      "paymentMethod": "cash",
+      "transactionId": ""
+    },
+    {
+      "id": "8257",
+      "from": "Chittagong",
+      "to": "Dhaka",
+      "date": "2025-09-21",
+      "time": "10:00",
+      "vehicleId": "v4",
+      "farekm": "5",
+      "notes": "",
+      "userId": "a4b6",
+      "passengerId": "2",
+      "status": "completed",
+      "paidAmount": "1100",
+      "paymentMethod": "mobile",
+      "transactionId": "21324544646"
+    },
+    {
+      "id": "9002",
+      "from": "Rajshahi",
+      "to": "Khulna",
+      "date": "2025-09-26",
+      "time": "15:00",
+      "vehicleId": "7776",
+      "farekm": "5",
+      "notes": "",
+      "userId": "a4b6",
+      "passengerId": "",
+      "status": "pending"
+    },
+    {
+      "id": "9003",
+      "from": "Chittagong",
+      "to": "Dhaka",
+      "date": "2025-09-27",
+      "time": "07:00",
+      "vehicleId": "v2",
+      "farekm": "4.5",
+      "notes": "AC available",
+      "userId": "2",
+      "passengerId": "a4b6",
+      "status": "completed",
+      "paidAmount": "900",
+      "paymentMethod": "cash"
+    }
+  ],
+  "requests": [
+    {
+      "id": "r1",
+      "rideId": "8812",
+      "userId": "3e3f",
+      "status": "accepted"
+    },
+    {
+      "id": "r2",
+      "rideId": "8812",
+      "userId": "2",
+      "status": "rejected"
+    },
+    {
+      "id": "r3",
+      "rideId": "8257",
+      "userId": "3e3f",
+      "status": "rejected"
+    },
+    {
+      "id": "r4",
+      "rideId": "8257",
+      "userId": "2",
+      "status": "accepted"
+    },
+    {
+      "id": "r5",
+      "rideId": "8257",
+      "userId": "1",
+      "status": "rejected"
+    },
+    {
+      "id": "fcdc",
+      "rideId": "9003",
+      "userId": "a4b6",
+      "status": "accepted"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "v1",
+      "userId": "2",
+      "model": "Toyota Corolla",
+      "reg": "DR1234",
+      "fitness": "2025-10-10"
+    },
+    {
+      "id": "v2",
+      "userId": "2",
+      "model": "Honda Civic",
+      "reg": "DR5678",
+      "fitness": "2024-12-31"
+    },
+    {
+      "id": "v4",
+      "userId": "a4b6",
+      "model": "Suzuki Gixxer",
+      "reg": "TA1020",
+      "fitness": "2025-09-30"
+    },
+    {
+      "id": "7776",
+      "model": "Apachee",
+      "reg": "KA7374",
+      "fitness": "2025-10-31",
+      "userId": "a4b6"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "ce0e",
+      "rideId": "9003",
+      "passengerId": "a4b6",
+      "rating": 4,
+      "comment": ""
+    }
+  ]
+}

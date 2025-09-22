@@ -1,0 +1,6 @@
+.account-section { padding: 120px 1rem 3rem; max-width: 1000px; margin: 0 auto; }
+.dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.card { background: #fff; padding: 2rem; border-radius: 12px; text-align: center; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer;border: 1px solid #ddd; transition: all 0.3s; }
+.card:hover { border-color: #8b0a1a;transform: scale(1.02); }
+.card h3 { margin-bottom: 0.5rem; color: #5b0611; }
+.card p { color: #555; font-size: 0.9rem; }

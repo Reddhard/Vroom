@@ -1,0 +1,125 @@
+.ride-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.ride-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ride-header {
+    margin-bottom: 1.5rem;
+}
+
+.route {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.location-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #007bff;
+    margin-right: 1rem;
+}
+
+.location-info .location-label {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 0.25rem;
+}
+
+.location-info .location-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.ride-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.detail-item .detail-label {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 0.25rem;
+}
+
+.detail-item .detail-value {
+    font-weight: 500;
+    color: #333;
+}
+
+.detail-item .price {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.ride-status {
+    margin-bottom: 1.5rem;
+}
+
+.status {
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.status.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status.ongoing {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.status.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.request-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.request-btn:hover {
+    background-color: #0056b3;
+}
+
+.request-btn.cancel {
+    background-color: #dc3545;
+}
+
+.request-btn.cancel:hover {
+    background-color: #c82333;
+}

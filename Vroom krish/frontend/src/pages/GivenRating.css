@@ -1,0 +1,86 @@
+.rides-section {
+  padding-top: 150px;
+}
+
+/* avoid header overlap */
+
+/* Header for title + button */
+.rides-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.rides-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #5b0611;
+}
+
+.back-btn {
+  padding: 0.5rem 1rem;
+  background: #5b0611;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #7a0a19;
+}
+
+/* Ride grid */
+.rides-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* two cards per row */
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .rides-grid {
+    grid-template-columns: 1fr;
+    /* single column on mobile */
+  }
+}
+
+.ride-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.ride-card:hover {
+  border-color: #8b0a1a;
+  transform: scale(1.02);
+}
+
+.ride-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #5b0611;
+}
+
+.ride-card p {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.ride-card .payment,
+.ride-card .rating-comment {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #f7f7f7;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.ride-status {
+  font-weight: 600;
+  color: #5b0611;
+}
